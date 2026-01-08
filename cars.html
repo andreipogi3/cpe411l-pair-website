@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Available Cars | Pinoy Car Rentals</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <header class="glass">
+    <div class="container">
+      <img src="logo/Logo.png.png" alt="Pinoy Car Rentals Logo" class="logo" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cars.html">Cars</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="cars" class="glass">
+    <h2>Our Fleet</h2>
+    <p style="text-align:center;">Choose from our wide range of cars. <br>Unmarked cars are available. Grayed out = currently rented.</p>
+    <div class="car-list">
+      <!-- Available Cars -->
+    <a href="reservation.html#reservation"> <!-- for external page -->
+      <div class="car-card glass">
+        <img src="cars/car1.png" alt="Toyota Vios">
+        <h3>Toyota Vios</h3>
+        <p>₱1,500/day</p>
+      </div>
+    </a>
+    <a href="reservation.html#reservation">
+      <div class="car-card glass">
+        <img src="cars/car2.png" alt="Honda City">
+        <h3>Honda City</h3>
+        <p>₱1,800/day</p>
+      </div>
+      </a>
+    <a href="reservation.html#reservation">
+      <div class="car-card glass">
+        <img src="cars/car3.png" alt="Toyota Innova">
+        <h3>Toyota Innova</h3>
+        <p>₱2,500/day</p>
+      </div>
+    </a>
+    <a href="reservation.html#reservation">
+      <div class="car-card glass">
+        <img src="cars/car4.png" alt="Mitsubishi Xpander">
+        <h3>Mitsubishi Xpander</h3>
+        <p>₱2,300/day</p>
+      </div>
+    </a>
+
+      <!-- More Available Cars -->
+       <a href="reservation.html#reservation">
+      <div class="car-card glass">
+        <img src="cars/car5.png" alt="Hyundai Accent">
+        <h3>Hyundai Accent</h3>
+        <p>₱1,400/day</p>
+      </div>
+      </a>
+      <a href="reservation.html#reservation">
+      <div class="car-card glass">
+        <img src="cars/car6.png" alt="Suzuki Ertiga">
+        <h3>Suzuki Ertiga</h3>
+        <p>₱1,900/day</p>
+      </div>
+      </a>
+
+      <!-- Unavailable Cars -->
+      <div class="car-card glass unavailable">
+        <img src="cars/car7.png" alt="Ford Everest">
+        <h3>Ford Everest</h3>
+        <p>Currently Rented</p>
+      </div>
+      <div class="car-card glass unavailable">
+        <img src="cars/car8.png" alt="Toyota Fortuner">
+        <h3>Toyota Fortuner</h3>
+        <p>Currently Rented</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="glass">
+    <p>Contact us: 0961 790 1396 | rdom2025@gmail.com</p>
+    <p>&copy; RDOM Car Rental Services - Bulacan</p>
+  </footer>
+
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 60 },
+        "size": { "value": 3 },
+        "color": { "value": "#facc15" },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#facc15",
+          "opacity": 0.2,
+          "width": 1
+        },
+        "move": { "enable": true, "speed": 2 }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
