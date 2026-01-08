@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pinoy Car Rentals</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <header class="glass">
+    <div class="container">
+      <img src="logo/Logo.png.png" alt="RDOM-LOGO" class="logo" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cars.html">Cars</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="glass hero-box">
+      <div class="hero-text">
+        <h2>Drive the <span class="highlight">Toyota Vios</span><br> Today!</h2>
+        <h3>Experience a smooth, stylish ride at an affordable price.</h3>
+      </div>
+      <img src="cars/toyota_vios.png.png" alt="Toyota Vios" class="drive-size" />
+    </div>
+  </section>
+
+  <section class="reservation glass">
+    <h3>Reserve Your Ride</h3>
+    <form>
+      <label>Pick-up Location</label>
+      <input type="text" placeholder="e.g. Quezon City" />
+      <label>Drop-off Location</label>
+      <input type="text" placeholder="e.g. Makati" />
+      <label>Pick-up Date</label>
+      <input type="date" />
+      <label>Drop-off Date</label>
+      <input type="date" />
+      <button type="submit">Continue Reservation</button>
+    </form>
+  </section>
+
+  <section id="cars">
+    <h3>Available Cars</h3>
+    <div class="carsizelist">
+    </div>
+    <div class="car-list">
+      <div class="car-card glass">
+        <a href="reservation.html#reservation">
+        <img src="C:\xampp\htdocs\car-rental-website\cars\car1.png" alt="Toyota Vios" />
+        <h3>Toyota Vios</h3>
+        <p>₱1,500/day</p>
+        </a>
+      </div>
+      <div class="car-card glass">
+        <img src="C:\xampp\htdocs\car-rental-website\cars\car2.png" alt="Honda City" />
+        <h3>Honda City</h3>
+        <p>₱1,800/day</p>
+      </div>
+      <div class="car-card glass">
+        <img src="C:\xampp\htdocs\car-rental-website\cars\car3.png" alt="Toyota Innova" />
+        <h3>Toyota Innova</h3>
+        <p>₱2,500/day</p>
+      </div>
+      <div class="car-card glass">
+        <img src="C:\xampp\htdocs\car-rental-website\cars\car4.png" alt="Mitsubishi Xpander" />
+        <h3>Mitsubishi Xpander</h3>
+        <p>₱2,300/day</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="glass">
+    <p>Contact us: 0961 790 1396 | rdom2025@gmail.com</p>
+    <p>&copy; RDOM Car Rental Services - Bulacan</p>
+  </footer>
+  <script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": { "value": 60 },
+      "size": { "value": 3 },
+      "color": { "value": "#facc15" },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#facc15",
+        "opacity": 0.2,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 2
+      }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": { "enable": true, "mode": "repulse" }
+      }
+    }
+  });
+</script>
+</body>
+</html>
