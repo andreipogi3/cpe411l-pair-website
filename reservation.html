@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reserve a Car | Pinoy Car Rentals</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <!-- Header -->
+  <header class="glass">
+    <div class="container">
+      <img src="logo/Logo.png.png" alt="Pinoy Car Rentals Logo" class="logo" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cars.html">Cars</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Reservation Form -->
+  <section id="reservation" class="reservation glass">
+    <h3>Reserve Your Ride</h3>
+    <form action="#" method="POST">
+      <label for="pickup-location">Pick-up Location</label>
+      <input type="text" id="pickup-location" name="pickup-location" placeholder="e.g. Quezon City" required />
+
+      <label for="dropoff-location">Drop-off Location</label>
+      <input type="text" id="dropoff-location" name="dropoff-location" placeholder="e.g. Makati" required />
+
+      <label for="pickup-date">Pick-up Date</label>
+      <input type="date" id="pickup-date" name="pickup-date" required />
+
+      <label for="dropoff-date">Drop-off Date</label>
+      <input type="date" id="dropoff-date" name="dropoff-date" required />
+
+      <label for="car-type">Select Car</label>
+      <select id="car-type" name="car-type" required>
+        <option value="">-- Choose a Car --</option>
+        <option value="Toyota Vios">Toyota Vios - ₱1,500/day</option>
+        <option value="Honda City">Honda City - ₱1,800/day</option>
+        <option value="Toyota Innova">Toyota Innova - ₱2,500/day</option>
+        <option value="Mitsubishi Xpander">Mitsubishi Xpander - ₱2,300/day</option>
+        <option value="Mitsubishi Xpander">Hyundai Accent - ₱1,400/day</option>
+        <option value="Mitsubishi Xpander">Suzuki Ertiga - ₱1,900/day</option>
+      </select>
+
+      <label for="full-name">Full Name</label>
+      <input type="text" id="full-name" name="full-name" placeholder="Juan Dela Cruz" required />
+
+      <label for="contact-number">Contact Number</label>
+      <input type="tel" id="contact-number" name="contact-number" placeholder="09123456789" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="juan@example.com" required />
+      <div class="button"> 
+      <button type="submit">Continue Reservation</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="glass">
+    <p>Contact us: 0961 790 1396 | rdom2025@gmail.com</p>
+    <p>&copy; RDOM Car Rental Services - Bulacan</p>
+  </footer>
+
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        size: { value: 3 },
+        color: { value: "#facc15" },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#facc15",
+          opacity: 0.2,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
